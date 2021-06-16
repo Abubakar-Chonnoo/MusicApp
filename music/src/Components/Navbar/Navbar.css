@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav_container {
+    width: 100%;
+    /* background-color: #d9d9d9;
+    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%); */
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 50px;
+    /* border: 2px solid black; */
+    margin-left: -20px;
+  }
+  
+  .music_logo {
+    width: 60px;
+    position: relative;
+    /* border: 2px solid red; */
+  }
+  
+  .logo span {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0 10px;
+    /* border: 2px solid blue; */
+  }
+  
+  .nav_container ul {
+    list-style: none;
+  }
+  
+  .nav_container a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+  
+  /* Dropdown CSS */
+  
+  .dropdown_box select {
+    background-color: #f1f2f6;
+    background-image: linear-gradient(315deg, #f1f2f6 0%, #c9c6c6 74%);
+  
+    color: black;
+    padding: 7px 0px;
+    width: 150px;
+    cursor: pointer;
+    border: 1px solid rgb(180, 173, 173);
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(8, 8, 8, 0.2);
+    appearance: button;
+    outline: none;
+    /* -webkit-appearance: none; */
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: "";
+  }
+  
+  .dropdown_box option {
+    background-color: rgb(127, 140, 141);
+    font-size: 16px;
+  }
+  
+  .dropdown_box select option:hover {
+    color: white;
+  }
+  
+  /* MEDIA QUERIES */
+  @media only screen and (max-width: 360px) {
+    .music_logo {
+      width: 45px;
+    }
+    .logo {
+      padding: 5px 25px;
+    }
+    .logo span {
+      font-size: 20px;
+    }
+    .dropdown_box select {
+      font-size: 17px;
+      width: 100px;
+      /* margin-right: 19px; */
+    }
+    .dropdown_box option {
+      font-size: 13px;
+    }
+  }
+  
+  @media only screen and (min-width: 360px) {
+    .music_logo {
+      width: 45px;
+    }
+    .logo span {
+      font-size: 22px;
+    }
+    .dropdown_box select {
+      font-size: 17px;
+      width: 110px;
+      margin-right: 15px;
+    }
+    .dropdown_box option {
+      font-size: 14px;
+    }
+  }
+  
+  @media only screen and (min-width: 468px) {
+    .music_logo {
+      width: 49px;
+    }
+    .logo span {
+      font-size: 24px;
+    }
+    .dropdown_box select {
+      font-size: 19px;
+      width: 120px;
+      margin-right: 13px;
+    }
+    .dropdown_box option {
+      font-size: 15px;
+    }
+  }
+  
+  @media only screen and (min-width: 850px) {
+    .music_logo {
+      width: 60px;
+    }
+    .logo span {
+      font-size: 27px;
+    }
+    .dropdown_box select {
+      font-size: 19px;
+      width: 130px;
+    }
+    .dropdown_box option {
+      font-size: 15px;
+    }
+  }
+  
+  @media only screen and (min-width: 850px) {
+    .logo span {
+      font-size: 30px;
+    }
+    .dropdown_box select {
+      font-size: 20px;
+      width: 150px;
+    }
+    .dropdown_box option {
+      font-size: 16px;
+    }
+  }
+  
